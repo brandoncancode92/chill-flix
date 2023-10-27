@@ -1,0 +1,196 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Used for dead space */
+.black {
+    background-color: black;
+}
+
+
+.gray {
+    background-color: rgba(45,45,45,1);
+}
+
+/* Navbar logo */
+.nav-image {
+    height: 12rem;
+}
+
+/* Navbar unordered list */
+nav ul {
+    margin-top: 25px;
+}
+
+/* List bullets */
+.bullets {
+    list-style-type: none;
+}
+
+/* Language selector */
+.selector {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 7rem;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+/* Sign in button */
+.sign-in {
+    height: 38px;
+    width: 100%;
+    background-color: red;
+    border-radius: 7px;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+nav {
+    margin-bottom: 8rem;
+}
+
+/* Sign in button hover */
+.sign-in:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* Email input box */
+.email-box {
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid lightgrey;
+    padding: 10px 25px;
+    width: 350px;
+    margin-right: 0.5rem;
+}
+
+/* Email input box placeholder text */
+.email-box::placeholder {
+    color: white;
+}
+
+/* Get started button */
+.get-started {
+    background-color: red;
+    border-radius: 7px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 19px;
+    border: none;
+}
+
+/* Get started button hover */
+.get-started:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* Plans div */
+#plans {
+    margin-top: 5rem;
+    background-color:red;
+    background-image:-moz-linear-gradient(left,rgba(0, 4, 19, 1), rgba(5, 12, 38, 1), rgba(40, 25, 71, 1), rgba(111, 19, 53, 1), rgba(40, 25, 71, 1), rgba(5, 12, 38, 1), rgba(0, 4, 19, 1));
+    background-image:-webkit-linear-gradient(left,rgba(0, 4, 19, 1), rgba(5, 12, 38, 1), rgba(40, 25, 71, 1), rgba(111, 19, 53, 1), rgba(40, 25, 71, 1), rgba(5, 12, 38, 1), rgba(0, 4, 19, 1));
+    background-image:-o-linear-gradient(left,rgba(0, 4, 19, 1), rgba(5, 12, 38, 1), rgba(40, 25, 71, 1), rgba(111, 19, 53, 1), rgba(40, 25, 71, 1), rgba(5, 12, 38, 1), rgba(0, 4, 19, 1));
+    background-image:-ms-linear-gradient(left,rgba(0, 4, 19, 1), rgba(5, 12, 38, 1), rgba(40, 25, 71, 1), rgba(111, 19, 53, 1), rgba(40, 25, 71, 1), rgba(5, 12, 38, 1), rgba(0, 4, 19, 1));
+    background-image:linear-gradient(left,rgba(0, 4, 19, 1), rgba(5, 12, 38, 1), rgba(40, 25, 71, 1), rgba(111, 19, 53, 1), rgba(40, 25, 71, 1), rgba(5, 12, 38, 1), rgba(0, 4, 19, 1));
+}
+
+/* Popcorn image */
+.popcorn {
+    height: 6rem;
+    margin-right: 1rem;
+}
+
+/* Learn more link */
+.learn-more-link {
+    color: rgba(68, 142, 244, 1);
+}
+
+/* Tv gif */
+.tv {
+    border: 2px solid gray;
+}
+
+/* Media query for mobile */
+@media (max-width: 767px) {
+    .row .col-12.col-lg-12.col-sm-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .row .col-12.col-lg-12.col-sm-6 .gif-1 {
+        order: 2;
+        margin-top: 1rem;
+    }
+}
+
+/* Border bottom for the main content divs */
+.b-bottom {
+    border-bottom: 8px solid rgba(35, 35, 35, 1);
+}
+
+/* Media query to flip the column on mobile devices */
+@media (max-width: 767px) {
+    .row #watch-everywhere {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+/* Media query to flip the column on mobile devices */
+@media (max-width: 767px) {
+    .row #download {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+/* FAQ hover effect */
+#faq-1:hover,
+#faq-2:hover,
+#faq-3:hover,
+#faq-4:hover,
+#faq-5:hover,
+#faq-6:hover {
+    background-color: rgba(150,145,137,1);
+}
+
+/* Hidding divs in the FAQ section */
+.hidden {
+    display: none;
+}
+
+/* Media query for the Footer links
+to split into to columns on mobile */
+@media only screen and (max-width: 768px) {
+    #footer-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #footer-links .d-flex.flex-column {
+        width: 45%;
+    }
+}

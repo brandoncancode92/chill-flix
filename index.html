@@ -3,9 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content="Chill-Flix Homepage"> -->
+    <!-- <meta name="author" content="Chill-Flix"> -->
+    <!-- Favicon Link -->
+    <link rel="icon" href="static/img/chill.gif">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Bootstrap Link -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <title>Chill-Flix Homepage</title>
 </head>
-<body>
-    
+<body class="black">
+    <div style="background-image: url('static/img/background.png'); height: 600px;" class="container-fluid">
+        <nav class="d-flex justify-content-around align-items-center">
+            <img class="nav-image" src="static/img/chill.png" alt="#">
+            <ul class="d-flex bullets">
+                <li>
+                    <select class="selector" name="language" id="language-selector">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="mandarin">Mandarin</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                    </select>
+                </li>
+                <li>
+                    <a class="sign-in" href="#"><strong>Sign In</strong></a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <div class="text-white ">
+                <div class="text-center">
+                    <h1><strong>Unlimited movies, TV shows, and more</strong></h1>
+                    <h4 class="mb-3">Watch anywhere. Cancel anytime.</h4>
+                    <h5 class="mb-3">Ready to watch? Enter your email to create or restart your membership.</h5>
+                </div>
+                <div class="text-center">
+                    <form action="#">
+                        <input class="email-box mb-3" type="text" name="email" placeholder="Email address">
+                        <button class="get-started" type="submit"><strong>Get Started</strong> ></button>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center p-4 rounded col-md-11 col-sm-11 mx-auto" id="plans">
+                <img class="popcorn" src="static/img/popcorn.png" alt="Popcorn">
+                <div>
+                    <h5 class="text-white"><strong>The Chill-Flix you love for just $4.99.</strong></h5>
+                    <h6 class="text-white">Get the Standard with ads plan.</h6>
+                    <a class="learn-more-link" href="#"><strong>Learn More ></strong></a>
+                </div>
+            </div>
+        </article>
+        <main>
+            <div class="row black">
+                <div class="d-flex justify-content-around align-items-center p-5 my-5 col-12 col-lg-12 col-sm-6 b-bottom">
+                    <div class="text-white mb-5">
+                        <h1 class="p-2 mb-4"><strong>Enjoy on your TV</strong></h1>
+                        <h5 class="p-2">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h5>
+                    </div>
+                    <img class="img-fluid col-md-4 tv" src="static/img/tv.gif" alt="TV scrolling through shows.">
+                </div>
+            </div>
+            <div class="row black">
+                <div id="watch-everywhere" class="d-flex justify-content-around align-items-center p-5 col-12 col-lg-12 col-sm-6 b-bottom">
+                    <img class="img-fluid col-md-4" src="static/img/computer.gif" alt="Computer showing a streaming show.">
+                    <div class="text-white mb-5">
+                        <h1 class="mb-4"><strong>Watch Everywhere</strong></h1>
+                        <h5>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row black">
+                <div class="d-flex justify-content-around align-items-center p-5 my-5 col-12 col-lg-12 col-sm-6 b-bottom">
+                    <div class="text-white mb-5">
+                        <h1 class="mb-4"><strong>Create profiles for kids</strong></h1>
+                        <h5>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</h5>
+                    </div>
+                    <img class="img-fluid col-md-4" src="static/img/chill-flix-kids.png" alt="Kids picture animation.">
+                </div>
+            </div>
+            <div class="row black">
+                <div id="download" class="d-flex justify-content-around align-items-center p-5 col-12 col-lg-12 col-sm-6 b-bottom">
+                    <img class="img-fluid col-md-4" src="static/img/downloading.gif" alt="#">
+                    <div class="text-white mb-5">
+                        <h1 class="mb-4"><strong>Download your favortie shows to watch offline</strong></h1>
+                        <h5>Only available with ad-free plans.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row black">
+                <div class="text-white b-bottom">
+                    <h1 class="text-center mt-5">Frequently Asked Questions</h1>
+                    <div class="flex-column col-md-8 mx-auto mt-5">
+                        <div id="faq-1" class="gray mb-2 p-3 flex-column">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3>What is Chill-flix?</h3>
+                                <h3>+</h3>
+                            </div>
+                            <div id="faq-1-info" class="faq-info hidden">
+                                <h3 class="mt-3 mb-4">Chill-Flix is a streaming service that offers a wide variety of award-winning
+                                TV shows, movies, anime, documentaries, and more on thousands of internet-connected
+                                devices.
+                                </h3>
+                                <h3>
+                                    You can watch as much as you want, whenever you want – all for one low monthly
+                                    price. There's always something new to discover and new TV shows and movies are
+                                    added every week!
+                                </h3>
+                            </div>
+                        </div>
+                        <div id="faq-2" class="gray mb-2 p-3 flex-column">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3>How much does Chill-Flix cost?</h3>
+                                <h3>+</h3>
+                            </div>
+                            <div id="faq-2-info" class="hidden">
+                                <h3 class="mt-3 mb-3">Watch Chill-Flix on your smartphone, tablet, Smart TV, laptop, or
+                                streaming device, all for one fixed monthly fee. Plans range from $4.99 to $19.99 a
+                                month. No extra costs, no contracts.
+                                </h3>
+                            </div>
+                        </div>
+                        <div id="faq-3" class="gray mb-2 p-3 flex-column">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3>Where can I watch?</h3>
+                                <h3>+</h3>
+                            </div>
+                            <div id="faq-3-info" class="hidden">
+                                <h3 class="mt-3 mb-4">Watch anywhere, anytime. Sign in with your Chill-Flix account to
+                                watch instantly on the web at blank from your personal computer or on any
+                                internet-connected device that offers the Chill-Flix app, including smart TVs, smartphones,
+                                tablets, streaming media players and game consoles.
+                                </h3>
+                                <h3>
+                                    You can also download your favorite shows with the iOS, Android, or Windows 10 app.
+                                    Use downloads to watch while you're on the go and without an internet connection.
+                                    Take Chill-Flix with you anywhere.
+                                </h3>
+                            </div>
+                        </div>
+                        <div id="faq-4" class="gray mb-2 p-3 flex-column">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3>How do I cancel Chill-Flix?</h3>
+                                <h3>+</h3>
+                            </div>
+                            <div id="faq-4-info" class="hidden">
+                                <h3 class="mt-3 mb-3">Chill-Flix is flexible. There are no pesky contracts and no commitments.
+                                You can easily cancel your account online in two clicks. There are no cancellation fees – start
+                                or stop your account anytime.
+                                </h3>
+                            </div>
+                        </div>
+                        <div id="faq-5" class="gray mb-2 p-3 flex-column">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3>What can I watch on Chill-Flix?</h3>
+                                <h3>+</h3>
+                            </div>
+                            <div id="faq-5-info" class="hidden">
+                                <h3 class="mt-3 mb-3">Chill-Flix has an extensive library of feature films, documentaries, TV
+                                shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                                </h3>
+                            </div>
+                        </div>
+                        <div id="faq-6" class="gray mb-2 p-3 flex-column">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3>Is Chill-Flix good for kids?</h3>
+                                <h3>+</h3>
+                            </div>
+                            <div id="faq-6-info" class="hidden">
+                                <h3 class="mt-3 mb-4">The Chill-Flix Kids experience is included in your membership to give parents control
+                                while kids enjoy family-friendly TV shows and movies in their own space.
+                                </h3>
+                                <h3>
+                                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                                    content kids can watch and block specific titles you don’t want kids to see.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <h5 class="mb-3">Ready to watch? Enter your email to create or restart your membership.</h5>
+                        <form action="#">
+                            <input class="email-box mb-3" type="text" name="email" placeholder="Email address">
+                            <button class="get-started mb-5" type="submit"><strong>Get Started</strong> ></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="flex-column text-white p-5">
+                <h6 class="mb-3">Questions? Call <a class="text-white mb-2" href="#">1-800-000-0000</a></h6>
+                <div id="footer-links" class="d-flex justify-content-between">
+                    <div class="d-flex flex-column">
+                        <a class="text-white mb-2" href="#">FAQ</a>
+                        <a class="text-white mb-2" href="#">Investor Relations</a>
+                        <a class="text-white mb-2" href="#">Buy Gift Cards</a>
+                        <a class="text-white mb-2" href="#">Cookie Preferences</a>
+                        <a class="text-white mb-2" href="#">Legal Notices</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a class="text-white mb-2" href="#">Help Center</a>
+                        <a class="text-white mb-2" href="#">Jobs</a>
+                        <a class="text-white mb-2" href="#">Ways to Watch</a>
+                        <a class="text-white mb-2" href="#">Corporate Information</a>
+                        <a class="text-white mb-2" href="#">Only on Chill-Flix</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a class="text-white mb-2" href="#">Account</a>
+                        <a class="text-white mb-2" href="#">Chill-Flix Shop</a>
+                        <a class="text-white mb-2" href="#">Terms of Use</a>
+                        <a class="text-white mb-2" href="#">Contact Us</a>
+                        <a class="text-white mb-2" href="#">Personal Information</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a class="text-white mb-2" href="#">Media Center</a>
+                        <a class="text-white mb-2" href="#">Redeem Gift Cards</a>
+                        <a class="text-white mb-2" href="#">Privacy</a>
+                        <a class="text-white mb-2" href="#">Speed Test</a>
+                        <a class="text-white mb-2" href="#">Ad Choices</a>
+                    </div>
+                </div>
+                <select class="selector mt-3" name="language" id="language-selector">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="mandarin">Mandarin</option>
+                    <option value="french">French</option>
+                    <option value="german">German</option>
+                </select>
+            </div>
+        </footer>
+    </div>
+    <!-- Javascript files -->
+    <script src="static/js/script.js"></script>
+    <!-- <script src="bootstrap.bundle.min.js"></script> -->
 </body>
 </html>
