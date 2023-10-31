@@ -59,7 +59,7 @@ nav {
 /* Logo */
 .logo {
     color: red;
-    text-shadow: 1.5px 1.5px white;
+    text-shadow: 1px 1px black;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 25px;
     font-weight: 900;
@@ -67,7 +67,7 @@ nav {
 }
 
 /* Logo letters */
-.logo span {
+.logo .chill {
     position: relative;
     display: inline-block;
     letter-spacing: 10px;
@@ -149,7 +149,7 @@ nav {
 
 /* Tv gif */
 .tv {
-    border: 2px solid gray;
+    border: 3px solid gray;
 }
 
 /* Media query for mobile */
@@ -222,4 +222,14 @@ to split into to columns on mobile */
     #footer-links .d-flex.flex-column {
         width: 45%;
     }
+}
+
+/* Border for the top of the footer logo div */
+.t-top {
+    border-top: 8px solid rgba(35, 35, 35, 1);
+}
+
+/* Footer year */
+.year {
+    font-size: 30px;
 }

@@ -59,4 +59,3 @@ const plusElement = faq1Div.querySelector('.plus');
 faq1Div.addEventListener('click', function() {
   plusElement.style.transform = plusElement.style.transform === 'rotate(45deg)' ? 'rotate(0deg)' : 'rotate(45deg)';
 });
-
