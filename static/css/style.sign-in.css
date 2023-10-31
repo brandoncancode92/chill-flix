@@ -1,0 +1,99 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* @media only screen and (max-width: 768px) {
+    #media-background {
+        background-color: black;
+    }
+} */
+
+/* Logo */
+.logo {
+    color: red;
+    text-shadow: 1px 1px black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+/* Logo letters */
+.logo .chill {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 10px;
+    animation: waveAnim 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+/* Logo animation */
+@keyframes waveAnim {
+    0%, 40%, 100% {
+        transform: translateY();
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Div background color/mask */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+/* Form input boxes */
+.input {
+    background-color: rgba(45,45,45,1);
+    height: 3rem;
+    width: 100%;
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 1);
+}
+
+/* Form sign in button */
+.sign-in-btn {
+    background-color: rgba(255, 0, 0, 1);
+    color: white;
+    height: 3rem;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Form sign in button effect */
+.sign-in-btn:hover {
+    background-color: darkred;
+}
+
+/* Text color */
+.gray {
+    color: rgb(108, 104, 104);
+}
+
+/* Anchor decoration */
+.anchor {
+    text-decoration: none;
+}
+
+/* Anchor hover effect */
+.anchor:hover {
+    text-decoration: underline;
+    color: rgb(108, 104, 104);;
+}
+
+/* Media query for the Footer links
+to split into to columns on mobile */
+@media only screen and (max-width: 768px) {
+    #footer-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #footer-links .d-flex.flex-column {
+        width: 45%;
+    }
+}

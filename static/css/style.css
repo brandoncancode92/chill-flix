@@ -10,9 +10,9 @@
 }
 
 /* Navbar logo */
-.nav-image {
+/* .nav-image {
     height: 12rem;
-}
+} */
 
 /* Navbar unordered list */
 nav ul {
@@ -32,7 +32,7 @@ nav ul {
     border-radius: 10px;
     height: 2.5rem;
     width: 7rem;
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 5px;
 }
 
@@ -82,6 +82,28 @@ nav {
     }
     20% {
         transform: translateY(-10px);
+    }
+}
+
+/* Media query for making the nav stack/center
+it's elements on mobile */
+@media (max-width: 767px) {
+    .d-flex.justify-content-around.align-items-center {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .nav-image {
+        margin-top: 0;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    ul.bullets {
+        margin-top: 10px;
     }
 }
 
@@ -232,4 +254,24 @@ to split into to columns on mobile */
 /* Footer year */
 .year {
     font-size: 30px;
+}
+
+@media (max-width: 767px) {
+    .d-flex.justify-content-around.align-items-center {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .nav-image {
+        margin-top: 0;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    ul.bullets {
+        margin-top: 10px;
+    }
 }
