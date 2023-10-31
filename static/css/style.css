@@ -9,11 +9,6 @@
     background-color: black;
 }
 
-
-.gray {
-    background-color: rgba(45,45,45,1);
-}
-
 /* Navbar logo */
 .nav-image {
     height: 12rem;
@@ -59,6 +54,35 @@ nav ul {
 
 nav {
     margin-bottom: 8rem;
+}
+
+/* Logo */
+.logo {
+    color: red;
+    text-shadow: 1.5px 1.5px white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+/* Logo letters */
+.logo span {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 10px;
+    animation: waveAnim 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+/* Logo animation */
+@keyframes waveAnim {
+    0%, 40%, 100% {
+        transform: translateY();
+    }
+    20% {
+        transform: translateY(-10px);
+    }
 }
 
 /* Sign in button hover */
@@ -164,6 +188,11 @@ nav {
         flex-direction: column-reverse;
         align-items: center;
     }
+}
+
+/* FAQ boxes */
+.gray {
+    background-color: rgba(45,45,45,1);
 }
 
 /* FAQ hover effect */
