@@ -80,26 +80,25 @@ mobile devices */
     color: rgb(108, 104, 104);
 }
 
-/* Label spacing for radio button */
-.label {
-    margin-left: 0.3rem;
+/* Form input boxes */
+.input {
+    background-color: rgba(255,255,255,1);
+    height: 3rem;
+    width: 100%;
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 1);
 }
 
-/* Email input box */
-.email {
-    border: 1px solid gray;
-}
-
-/* Forgot phone and email link */
-.forgot-phone-email {
+/* Cancel button */
+.cancel-btn {
+    color: white;
     text-decoration: none;
-    color: rgb(13, 110, 253);
 }
 
-/* Forgot phone and email link effect */
-.forgot-phone-email:hover {
-    text-decoration: underline;
-    color: rgb(13, 110, 253);
+/* Cancel button effect */
+.cancel-btn:hover {
+    color: white;
+    text-decoration: none;
 }
 
 /* Learn more link */
