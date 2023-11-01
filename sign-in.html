@@ -17,10 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Dancing+Script&family=Gochi+Hand&family=Pixelify+Sans&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;1,400&family=Teko:wght@300&family=Tektur&display=swap" rel="stylesheet">
     <title>Chill-Flix</title>
 </head>
-<body style="background-image: url('static/img/sign-in-background.png'); background-size: cover; background-repeat: no-repeat;" id="media-background">
-    <div class="container-fluid">
+<body class="background">
+    <div class="container-">
         <header class="flex justify-content-start">
-            <h1 class="logo p-3">
+            <h1 class="logo p-5">
                 <span class="chill" style="--i:1">C</span>
                 <span class="chill" style="--i:2">H</span>
                 <span class="chill" style="--i:3">I</span>
@@ -43,26 +43,31 @@
                         <button class="sign-in-btn mb-2" type="submit">Sign In</button>
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <input type="checkbox" name="remember_me" id="remember_me">
+                                <input type="checkbox" name="remember_me" id="remember_me" checked>
                                 <label class="gray" for="remember_me">Remember me</label>
                             </div>
-                            <a class="gray anchor" href="#">Need help?</a>
+                            <a class="gray anchor" href="need-help.html">Need help?</a>
                         </div>
                     </form>
                     <h5 class="gray mt-3">New to Chill-Flix? <a class="text-white anchor" href="index.html">Sign up now.</a></h5>
                     <p class="gray">This page is protected by Google reCAPTCHA to ensure you're not a bot.
-                    <a class="anchor" href="#">Learn more.</a>
+                    <a class="learn-more" href="#">Learn more.</a>
+                    <p class="gray hidden">
+                        The information collected by Google reCAPTCHA is subject to the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>,
+                        and is used for providing, maintaining, and improving the reCAPTCHA service and for general security
+                        purposes (it is not used for personalized advertising by Google).
+                    </p>
                     </p>
                 </div>
             </div>
         </main>
         <footer>
-            <div class="flex-column text-white p-5 overlay">
+            <div class="flex-column text-white p-5 overlay t-top">
                 <h6 class="mb-3 gray">Questions? Call <a class="gray mb-2 anchor" href="#">1-800-000-0000</a></h6>
-                <div id="footer-links" class="d-flex justify-content-around">
+                <div id="footer-links" class="d-flex justify-content-between">
                     <div class="d-flex flex-column">
                         <a class="gray mb-2 anchor" href="#">FAQ</a>
-                        <a class="gray mb-5 anchor" href="#">Privacy</a>
+                        <a class="gray mb-2 anchor" href="#">Privacy</a>
                         <a class="gray mb-2 anchor" href="#">Ad Choices</a>
                     </div>
                     <div class="d-flex flex-column">
@@ -87,7 +92,7 @@
                 </select>
             </div>
             <div>
-                <h1 style="font-size: 40px;" class="logo text-center t-top p-3 overlay my-0">Chill-Flix <span class="year">2 0 2 3</span></h1>
+                <h1 style="font-size: 40px;" class="logo text-center  p-3 overlay my-0">Chill-Flix <span class="year">2 0 2 3</span></h1>
                 <!-- <h1 class="logo text-center">
                     <span style="--i:1">C</span>
                     <span style="--i:2">H</span>
@@ -104,7 +109,7 @@
         </footer>
     </div>
     <!-- Javascript files -->
-    <script src="static/js/script.js"></script>
+    <script src="static/js/need-help.js"></script>
     <!-- <script src="bootstrap.bundle.min.js"></script> -->
 </body>
 </html>

@@ -4,11 +4,21 @@
     padding: 0;
 }
 
-/* @media only screen and (max-width: 768px) {
-    #media-background {
+/* Page background */
+.background {
+    background-image: url('/chill-flix/static/img/sign-in-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Media query for changing the
+background on mobile devices */
+@media only screen and (max-width: 768px) {
+    .background {
+        background-image: none;
         background-color: black;
     }
-} */
+}
 
 /* Logo */
 .logo {
@@ -26,6 +36,18 @@
     letter-spacing: 10px;
     animation: waveAnim 1s infinite;
     animation-delay: calc(.1s * var(--i));
+}
+
+/* Media query to change the logo letter
+spacing on mobile devices */
+@media only screen and (max-width: 768px) {
+    .logo .chill {
+        position: relative;
+        display: inline-block;
+        letter-spacing: 5px;
+        animation: waveAnim 1s infinite;
+        animation-delay: calc(.1s * var(--i));
+    }
 }
 
 /* Logo animation */
@@ -84,8 +106,19 @@
     color: rgb(108, 104, 104);;
 }
 
+p.learn-more:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Hiding the learn more div in the
+sign in section */
+.hidden {
+    display: none;
+}
+
 /* Media query for the Footer links
-to split into to columns on mobile */
+to split into to columns on mobile devices */
 @media only screen and (max-width: 768px) {
     #footer-links {
         display: flex;
@@ -96,4 +129,20 @@ to split into to columns on mobile */
     #footer-links .d-flex.flex-column {
         width: 45%;
     }
+}
+
+.t-top {
+    margin-top: 7rem;
+}
+
+/* Language selector */
+.selector {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 7rem;
+    margin-right: 5px;
+    padding: 5px;
 }
