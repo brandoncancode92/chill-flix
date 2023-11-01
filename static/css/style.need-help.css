@@ -1,0 +1,171 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page background */
+.background {
+    background-image: url('/chill-flix/static/img/the-queen.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    padding: 20px;
+}
+
+/* Media query for changing the
+background and nav properties on
+mobile devices */
+@media only screen and (max-width: 768px) {
+    .background {
+        background-image: none;
+        background-color: white;
+    }
+
+    nav {
+        border-bottom: 1px solid gray;
+        padding: 7px;
+    }
+
+    nav .logo {
+        color: red;
+        text-shadow: 1px 1px black;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+    }
+
+    .logo .chill {
+        position: relative;
+        display: inline-block;
+        letter-spacing: 5px;
+    }
+}
+
+/* Logo */
+.logo {
+    color: red;
+    text-shadow: 1px 1px black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+/* Sign in link */
+.sign-in-link {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+/* Sign in link effect */
+.sign-in-link:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* Form background colo */
+.white {
+    background-color: white;
+}
+
+/* Div background color/mask */
+.nh-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Text color */
+.gray {
+    color: rgb(108, 104, 104);
+}
+
+/* Label spacing for radio button */
+.label {
+    margin-left: 0.3rem;
+}
+
+/* Email input box */
+.email {
+    border: 1px solid gray;
+}
+
+/* Forgot phone and email link */
+.forgot-phone-email {
+    text-decoration: none;
+    color: rgb(13, 110, 253);
+}
+
+/* Forgot phone and email link effect */
+.forgot-phone-email:hover {
+    text-decoration: underline;
+    color: rgb(13, 110, 253);
+}
+
+/* Learn more link */
+a.learn-more {
+    text-decoration: underline;
+    color: gray;
+}
+
+/* Learn more effet */
+a.learn-more:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+/* Hiding the learn more div in the
+sign in section */
+.hidden {
+    display: none;
+}
+
+/* Media query for the Footer links
+to split into to columns on mobile devices */
+@media only screen and (max-width: 768px) {
+    #footer-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #footer-links .d-flex.flex-column {
+        width: 45%;
+    }
+}
+
+/* Margin for the footer element */
+.t-top {
+    margin-top: 9rem;
+}
+
+/* Media query to adjust the footer element
+margin */
+@media only screen and (max-width: 768px) {
+    div.t-top {
+        margin-top: 1rem;
+    }
+}
+
+/* Anchor decoration */
+.anchor {
+    text-decoration: none;
+}
+
+/* Anchor hover effect */
+.anchor:hover {
+    text-decoration: underline;
+    color: rgb(108, 104, 104);;
+}
+
+/* Language selector */
+.selector {
+    color: gray;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 7rem;
+    margin-right: 5px;
+    padding: 5px;
+}

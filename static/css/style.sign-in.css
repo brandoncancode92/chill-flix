@@ -132,14 +132,14 @@ to split into to columns on mobile devices */
 }
 
 .t-top {
-    margin-top: 7rem;
+    margin-top: 11rem;
 }
 
 /* Language selector */
 .selector {
-    color: white;
+    color: gray;
     background-color: black;
-    border: 2px solid white;
+    border: 2px solid gray;
     border-radius: 10px;
     height: 2.5rem;
     width: 7rem;
