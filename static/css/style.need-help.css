@@ -136,7 +136,7 @@ to split into to columns on mobile devices */
 
 /* Margin for the footer element */
 .t-top {
-    margin-top: 9rem;
+    margin-top: 13.5rem;
 }
 
 /* Media query to adjust the footer element
@@ -168,4 +168,10 @@ margin */
     width: 7rem;
     margin-right: 5px;
     padding: 5px;
+}
+
+/* Extra room for the learn more
+div */
+.extra-info {
+    height: 200px;
 }
