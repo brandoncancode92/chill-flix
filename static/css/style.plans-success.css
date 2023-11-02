@@ -68,12 +68,8 @@ mobile devices */
     border-bottom: 1px solid gray;
 }
 
-/* Form input boxes */
-.input-box {
-    height: 3rem;
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid rgb(191, 188, 188);
+.fireworks {
+    height: 200px;
 }
 
 /* Next button */
@@ -86,23 +82,12 @@ mobile devices */
     border: none;
     font-size: 20px;
     width: 100%;
-    margin-bottom: 7.7rem;
+    margin-bottom: 6rem;
 }
 
 /* Next button effect */
 .next-btn:hover {
     background-color: darkred;
-    color: white;
-}
-
-/* Next link */
-.next-link {
-    color: white;
-    text-decoration: none;
-}
-
-/* Next link effect */
-.next-link:hover {
     color: white;
 }
 

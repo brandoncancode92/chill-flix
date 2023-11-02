@@ -4,15 +4,18 @@
     padding: 0;
 }
 
+/* Page background */
+.background {
+    background-image: url('/chill-flix/static/img/background.png');
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* Used for dead space */
 .black {
     background-color: black;
 }
-
-/* Navbar logo */
-/* .nav-image {
-    height: 12rem;
-} */
 
 /* Navbar unordered list */
 nav ul {
@@ -61,33 +64,39 @@ nav {
     color: red;
     text-shadow: 1px 1px black;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 25px;
-    font-weight: 900;
+    font-size: 50px;
     margin-top: 20px;
 }
 
 /* Logo letters */
-.logo .chill {
+/* .logo .chill {
     position: relative;
     display: inline-block;
     letter-spacing: 10px;
     animation: waveAnim 1s infinite;
     animation-delay: calc(.1s * var(--i));
-}
+} */
 
 /* Logo animation */
-@keyframes waveAnim {
+/* @keyframes waveAnim {
     0%, 40%, 100% {
         transform: translateY();
     }
     20% {
         transform: translateY(-10px);
     }
-}
+} */
 
 /* Media query for making the nav stack/center
 it's elements on mobile */
 @media (max-width: 767px) {
+
+    .background {
+        background-image: url('/chill-flix/static/img/tv-shows.png');
+        background-size: 100vh;
+        background-repeat: no-repeat;
+    }
+
     .d-flex.justify-content-around.align-items-center {
         flex-direction: column;
         align-items: center;

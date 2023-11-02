@@ -18,7 +18,7 @@
     <title>Chill-Flix Homepage</title>
 </head>
 <body class="black">
-    <div style="background-image: url('static/img/background.png'); height: 590px; background-repeat: no-repeat; background-size: cover;" class="container-fluid">
+    <div class="background container-fluid">
         <nav class="d-flex justify-content-around align-items-center">
             <!-- <img class="nav-image" src="static/img/chill.png" alt="Chill-Flix logo"> -->
             <h1 class="logo p-3">
@@ -56,8 +56,8 @@
                     <h5 class="mb-3">Ready to watch? Enter your email to create or restart your membership.</h5>
                 </div>
                 <div class="text-center">
-                    <form action="#">
-                        <input class="email-box mb-3" type="text" name="email" placeholder="Email address">
+                    <form action="plans.html" method="#">
+                        <input class="email-box mb-3" type="email" name="email" placeholder="Enter a fake/random email address" required>
                         <button class="get-started" type="submit"><strong>Get Started</strong> ></button>
                     </form>
                 </div>
@@ -200,8 +200,8 @@
                     </div>
                     <div class="text-center mt-5">
                         <h5 class="mb-3">Ready to watch? Enter your email to create or restart your membership.</h5>
-                        <form action="#">
-                            <input class="email-box mb-3" type="text" name="email" placeholder="Email address">
+                        <form action="plans.html" method="#">
+                            <input class="email-box mb-3" type="email" name="email" placeholder="Enter a fake/random email address" required>
                             <button class="get-started mb-5" type="submit"><strong>Get Started</strong> ></button>
                         </form>
                     </div>
@@ -250,7 +250,7 @@
                 </select>
             </div>
             <div>
-                <h1 style="font-size: 40px;" class="logo text-center t-top p-3">Chill-Flix <span class="year">2 0 2 3</span></h1>
+                <h1 style="font-size: 40px;" class="logo text-center p-3">Chill-Flix <span class="year">2 0 2 3</span></h1>
                 <!-- <h1 class="logo text-center">
                     <span style="--i:1">C</span>
                     <span style="--i:2">H</span>
@@ -267,7 +267,7 @@
         </footer>
     </div>
     <!-- Javascript files -->
-    <script src="static/js/script.js"></script>
+    <!-- <script src="static/js/script.js"></script> -->
     <!-- <script src="bootstrap.bundle.min.js"></script> -->
 </body>
 </html>

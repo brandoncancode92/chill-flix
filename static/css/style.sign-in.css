@@ -30,13 +30,13 @@ background on mobile devices */
 }
 
 /* Logo letters */
-.logo .chill {
+/* .logo .chill {
     position: relative;
     display: inline-block;
     letter-spacing: 10px;
     animation: waveAnim 1s infinite;
     animation-delay: calc(.1s * var(--i));
-}
+} */
 
 /* Media query to change the logo letter
 spacing on mobile devices */
@@ -51,14 +51,14 @@ spacing on mobile devices */
 }
 
 /* Logo animation */
-@keyframes waveAnim {
+/* @keyframes waveAnim {
     0%, 40%, 100% {
         transform: translateY();
     }
     20% {
         transform: translateY(-10px);
     }
-}
+} */
 
 /* Div background color/mask */
 .overlay {
@@ -69,6 +69,7 @@ spacing on mobile devices */
 /* Form input boxes */
 .input {
     background-color: rgba(45,45,45,1);
+    color: white;
     height: 3rem;
     width: 100%;
     border-radius: 10px;
