@@ -1,0 +1,239 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page background */
+.background {
+    background-color: white;
+}
+
+nav {
+    padding: 20px;
+}
+
+/* Media query for changing the
+background and nav properties on
+mobile devices */
+@media only screen and (max-width: 768px) {
+    .background {
+        background-image: none;
+        background-color: white;
+    }
+
+    nav {
+        border-bottom: 1px solid gray;
+        padding: 7px;
+    }
+
+    nav .logo {
+        color: red;
+        text-shadow: 1px 1px black;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+    }
+
+    .logo .chill {
+        position: relative;
+        display: inline-block;
+        letter-spacing: 5px;
+    }
+}
+
+/* Logo */
+.logo {
+    color: red;
+    text-shadow: 1px 1px black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+/* Sign in link */
+.sign-in-link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* Sign in link effect */
+.sign-in-link:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.b-border {
+    border-bottom: 1px solid gray;
+}
+
+/* Red plan boxes */
+.box {
+    background-color: red;
+    color: white;
+    height: 100px;
+    width: 100px;
+    padding: 3px;
+    margin: 0px 35px;
+    border-radius: 2px;
+}
+
+/* Check inside the circle */
+.check {
+    height: 40px;
+}
+
+/* Little checks */
+.check-two {
+    height: 20px;
+}
+
+/* Plans scrollbox */
+#scroll-box {
+    overflow-y: scroll;
+    height: 500px;
+}
+
+/* Plan info */
+.info {
+    margin: 0px 55px;
+}
+
+.info-two {
+    margin: 0px 62px;
+}
+
+.info-three {
+    margin: 0px 54px;
+}
+
+.info-four,
+.info-five {
+    margin: 0px 77px;
+}
+/* End of plan info */
+
+/* Gray background for lock div */
+.lock-background {
+    background-color: rgba(243, 243, 243, 1);
+}
+
+/* Next button */
+.next-btn {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    width: 40%;
+}
+
+/* Next link */
+.next-link {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+/* Media query for the next link
+to take up all the scroll box space */
+@media (max-width: 767px) {
+    .next-link {
+        width: 100%;
+    }
+}
+
+/* Next link effect */
+.next-link:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* Div background color/mask */
+.nh-overlay {
+    background-color: rgba(243, 243, 243, 1);
+}
+
+/* Text color */
+.gray {
+    color: rgb(108, 104, 104);
+}
+
+/* Media query for the Footer links
+to split into to columns on mobile devices */
+@media only screen and (max-width: 768px) {
+    #footer-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #footer-links .d-flex.flex-column {
+        width: 45%;
+    }
+}
+
+/* Margin for the footer element */
+.t-top {
+    margin-top: 9rem;
+}
+
+/* Media query to adjust the footer element
+margin */
+@media only screen and (max-width: 768px) {
+    div.t-top {
+        margin-top: 1rem;
+    }
+}
+
+/* Anchor decoration */
+.anchor {
+    text-decoration: none;
+}
+
+/* Anchor hover effect */
+.anchor:hover {
+    text-decoration: underline;
+}
+
+/* Language selector */
+.selector {
+    color: black;
+    background-color: rgb(254, 254, 254);
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 7rem;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+/* Media query to move the plan
+boxes to the center on mobile
+devices */
+@media (max-width: 767px) {
+    .col-md-10 {
+        width: 100%;
+    }
+
+    .box {
+        margin: 0 auto;
+    }
+
+    #scroll-box {
+        overflow-x: auto;
+    }
+}
+
+/* Media query for the plan subject
+to disappear on mobile */
+@media (max-width: 767px) {
+    .plan-subject {
+        display: none;
+    }
+}
+
