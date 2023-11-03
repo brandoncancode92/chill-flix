@@ -1,2 +1,2 @@
 # chill-flix
-A streaming service homepage.
+A front-end tv/movie streaming website. 
