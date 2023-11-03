@@ -238,3 +238,29 @@ to disappear on mobile */
     }
 }
 
+/* @media (max-width: 768px) {
+    #scroll-box {
+        display: none;
+    }
+} */
+
+/* Hide mobile-box on desktop */
+@media (min-width: 768px) {
+    .mobile-box {
+        display: none;
+    }
+}
+
+  /* Show mobile-box on mobile */
+@media (max-width: 767px) {
+    .mobile-box {
+        display: block;
+    }
+}
+
+  /* Hide scroll-box on mobile */
+@media (max-width: 767px) {
+    #scroll-box {
+        display: none;
+    }
+}
