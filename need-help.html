@@ -44,24 +44,27 @@
                     <form class="d-flex flex-column mb-5" action="#" method="#">
                         <div class="p-4">
                             <div>
-                                <input type="radio" name="email_radio" value="1" id="email_radio" checked>
+                                <input class="fake-radio" type="radio" name="email_radio" value="1" id="email_radio" checked>
                                 <label class="label" for="email_radio">Email</label>
                             </div>
                             <div>
-                                <input type="radio" name="txt_message_radio" value="1" id="text_message_radio">
+                                <input class="fake-radio phone-radio" type="radio" name="txt_message_radio" value="1" id="text_message_radio">
                                 <label class="label" for="text_message_radio">Text Message (SMS)</label>
                             </div>
                         </div>
-                        <p>
+                        <p class="email">
                             We will send you an email with instructions on how to reset your
                             password.
                         </p>
-                        <input id="email" class="email mb-4 p-2" type="email" placeholder="name@example.com">
-                        <button class="mb-4 btn btn-primary p-2" type="submit">Email Me</button>
-                        <!-- <div class="d-flex flex-column hidden">
-                            <input id="phone" class="email mb-4 p-2" type="tel">
-                            <button class="mb-4 btn btn-primary p-2" type="submit">Text me</button>
-                        </div> -->
+                        <p class="hidden">
+                            We will text you a verification code to reset your password.
+                            Message and data rates may apply.
+                        </p>
+                        <div class="d-flex flex-column email-div">
+                            <input class="email mb-4 p-2" type="email" placeholder="name@example.com">
+                            <input class="hidden mb-4 p-2" type="tel" placeholder="Fake/random number">
+                            <button class="form-button mb-4 btn btn-primary p-2" type="submit">Email Me</button>
+                        </div>
                         <a class="forgot-phone-email" href="forgot-email-phone.html">I don't remember my email or phone.</a>
                     </form>
                 </div>
@@ -70,7 +73,7 @@
                 <p class="gray col-md-3 mx-auto">This page is protected by Protekt reWGBATYS to ensure you're not a bot.
                 <a class="learn-more" href="#">Learn more</a>
                 </p>
-                <p class="gray hidden col-md-3 mx-auto">
+                <p class="gray learn-more-hidden col-md-3 mx-auto">
                     The information collected by Protekt reWGBATYS is subject to the Protekt <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>,
                     and is used for providing, maintaining, and improving the reWGBATYS service and for general security
                     purposes (it is not used for personalized advertising).

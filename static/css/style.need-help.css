@@ -86,7 +86,7 @@ mobile devices */
 }
 
 /* Email input box */
-.email {
+.input {
     border: 1px solid gray;
 }
 
@@ -116,7 +116,7 @@ a.learn-more:hover {
 
 /* Hiding the learn more div in the
 sign in section */
-.hidden {
+.learn-more-hidden {
     display: none;
 }
 
