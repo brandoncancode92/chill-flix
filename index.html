@@ -19,6 +19,7 @@
 </head>
 <body class="black">
     <div class="background container-fluid">
+        <!-- Navbar -->
         <nav class="d-flex justify-content-around align-items-center">
             <!-- <img class="nav-image" src="static/img/chill.png" alt="Chill-Flix logo"> -->
             <h1 class="logo p-3">
@@ -35,6 +36,7 @@
             </h1>
             <ul class="d-flex bullets">
                 <li>
+                    <!-- Selector -->
                     <select class="selector" name="language" id="language-selector">
                         <option value="english">English</option>
                         <option value="spanish">Spanish</option>
@@ -44,17 +46,21 @@
                     </select>
                 </li>
                 <li>
+                    <!-- Sign in button -->
                     <a class="sign-in" href="sign-in.html"><strong>Sign In</strong></a>
                 </li>
             </ul>
         </nav>
+        <!-- End of navbar -->
         <article>
             <div class="text-white ">
+                <!-- Main banner -->
                 <div class="text-center">
                     <h1><strong>Unlimited movies, TV shows, and more</strong></h1>
                     <h4 class="mb-3">Watch anywhere. Cancel anytime.</h4>
                     <h5 class="mb-3">Ready to watch? Enter your email to create or restart your membership.</h5>
                 </div>
+                <!-- Email form -->
                 <div class="text-center">
                     <form action="plans.html" method="#">
                         <input class="email-box mb-3" type="email" name="email" placeholder="Enter a fake / random email address" required>
@@ -62,6 +68,7 @@
                     </form>
                 </div>
             </div>
+            <!-- Ad banner -->
             <div class="d-flex justify-content-center align-items-center p-4 rounded col-md-11 col-sm-11 mx-auto" id="plans">
                 <img class="popcorn" src="static/img/popcorn.png" alt="Popcorn">
                 <div>
@@ -70,8 +77,11 @@
                     <a class="learn-more-link" href="plans.html"><strong>Learn More ></strong></a>
                 </div>
             </div>
+            <!-- End of ad banner -->
         </article>
+        <!-- Main Content -->
         <main>
+            <!-- Big screen row -->
             <div class="row black">
                 <div class="d-flex justify-content-around align-items-center p-5 my-5 col-12 col-lg-12 col-sm-6 b-bottom">
                     <div class="text-white mb-5">
@@ -81,6 +91,7 @@
                     <img class="img-fluid col-md-4 tv" src="static/img/tv.gif" alt="TV scrolling through shows.">
                 </div>
             </div>
+            <!-- Watch everywhere row -->
             <div class="row black">
                 <div id="watch-everywhere" class="d-flex justify-content-around align-items-center p-5 col-12 col-lg-12 col-sm-6 b-bottom">
                     <img class="img-fluid col-md-4" src="static/img/computer.gif" alt="Computer showing a streaming show.">
@@ -90,6 +101,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Create profiles row -->
             <div class="row black">
                 <div class="d-flex justify-content-around align-items-center p-5 my-5 col-12 col-lg-12 col-sm-6 b-bottom">
                     <div class="text-white mb-5">
@@ -99,6 +111,7 @@
                     <img class="img-fluid col-md-4" src="static/img/chill-flix-kids.png" alt="Kids picture animation.">
                 </div>
             </div>
+            <!-- Download favorite tv shows row -->
             <div class="row black">
                 <div id="download" class="d-flex justify-content-around align-items-center p-5 col-12 col-lg-12 col-sm-6 b-bottom">
                     <img class="img-fluid col-md-4" src="static/img/downloading.gif" alt="#">
@@ -108,14 +121,16 @@
                     </div>
                 </div>
             </div>
+            <!-- Frequently asked questions -->
             <div class="row black">
                 <div class="text-white b-bottom">
                     <h1 class="text-center mt-5">Frequently Asked Questions</h1>
                     <div class="flex-column col-md-8 col-sm-6 mx-auto mt-5">
+                        <!-- What is Chill-flix -->
                         <div id="faq-1" class="gray mb-2 p-3 flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3>What is Chill-flix?</h3>
-                                <h3>+</h3>
+                                <h3 id="plus-1">+</h3>
                             </div>
                             <div id="faq-1-info" class="faq-info hidden">
                                 <h3 class="mt-3 mb-4">Chill-Flix is a streaming service that offers a wide variety of award-winning
@@ -129,10 +144,11 @@
                                 </h3>
                             </div>
                         </div>
+                        <!-- Chill-flix cost -->
                         <div id="faq-2" class="gray mb-2 p-3 flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3>How much does Chill-Flix cost?</h3>
-                                <h3>+</h3>
+                                <h3 id="plus-2">+</h3>
                             </div>
                             <div id="faq-2-info" class="hidden">
                                 <h3 class="mt-3 mb-3">Watch Chill-Flix on your smartphone, tablet, Smart TV, laptop, or
@@ -141,10 +157,11 @@
                                 </h3>
                             </div>
                         </div>
+                        <!-- Where can I watch -->
                         <div id="faq-3" class="gray mb-2 p-3 flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3>Where can I watch?</h3>
-                                <h3>+</h3>
+                                <h3 id="plus-3">+</h3>
                             </div>
                             <div id="faq-3-info" class="hidden">
                                 <h3 class="mt-3 mb-4">Watch anywhere, anytime. Sign in with your Chill-Flix account to
@@ -159,10 +176,11 @@
                                 </h3>
                             </div>
                         </div>
+                        <!-- Cancel -->
                         <div id="faq-4" class="gray mb-2 p-3 flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3>How do I cancel Chill-Flix?</h3>
-                                <h3>+</h3>
+                                <h3 id="plus-4">+</h3>
                             </div>
                             <div id="faq-4-info" class="hidden">
                                 <h3 class="mt-3 mb-3">Chill-Flix is flexible. There are no pesky contracts and no commitments.
@@ -171,10 +189,11 @@
                                 </h3>
                             </div>
                         </div>
+                        <!-- What can I watch -->
                         <div id="faq-5" class="gray mb-2 p-3 flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3>What can I watch on Chill-Flix?</h3>
-                                <h3>+</h3>
+                                <h3 id="plus-5">+</h3>
                             </div>
                             <div id="faq-5-info" class="hidden">
                                 <h3 class="mt-3 mb-3">Chill-Flix has an extensive library of feature films, documentaries, TV
@@ -182,10 +201,11 @@
                                 </h3>
                             </div>
                         </div>
+                        <!-- Is Chill-flix good for kids -->
                         <div id="faq-6" class="gray mb-2 p-3 flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3>Is Chill-Flix good for kids?</h3>
-                                <h3>+</h3>
+                                <h3 id="plus-6">+</h3>
                             </div>
                             <div id="faq-6-info" class="hidden">
                                 <h3 class="mt-3 mb-4">The Chill-Flix Kids experience is included in your membership to give parents control
@@ -199,6 +219,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
+                        <!-- Email form -->
                         <h5 class="mb-3">Ready to watch? Enter your email to create or restart your membership.</h5>
                         <form action="plans.html" method="#">
                             <input class="email-box mb-3" type="email" name="email" placeholder="Enter a fake / random email address" required>
@@ -208,10 +229,13 @@
                 </div>
             </div>
         </main>
+        <!-- End of main content -->
+        <!-- Footer -->
         <footer>
             <div class="flex-column text-white p-5">
                 <h6 class="mb-3">Questions? Call <a class="text-white mb-2" href="#">1-800-000-0000</a></h6>
                 <div id="footer-links" class="d-flex justify-content-between">
+                    <!-- Column 1 links -->
                     <div class="d-flex flex-column">
                         <a class="text-white mb-2" href="#">FAQ</a>
                         <a class="text-white mb-2" href="#">Investor Relations</a>
@@ -219,6 +243,7 @@
                         <a class="text-white mb-2" href="#">Cookie Preferences</a>
                         <a class="text-white mb-2" href="#">Legal Notices</a>
                     </div>
+                    <!-- Column 2 links -->
                     <div class="d-flex flex-column">
                         <a class="text-white mb-2" href="#">Help Center</a>
                         <a class="text-white mb-2" href="#">Jobs</a>
@@ -226,6 +251,7 @@
                         <a class="text-white mb-2" href="#">Corporate Information</a>
                         <a class="text-white mb-2" href="#">Only on Chill-Flix</a>
                     </div>
+                    <!-- Column 3 links -->
                     <div class="d-flex flex-column">
                         <a class="text-white mb-2" href="#">Account</a>
                         <a class="text-white mb-2" href="#">Chill-Flix Shop</a>
@@ -233,6 +259,7 @@
                         <a class="text-white mb-2" href="#">Contact Us</a>
                         <a class="text-white mb-2" href="#">Personal Information</a>
                     </div>
+                    <!-- Column 4 links -->
                     <div class="d-flex flex-column">
                         <a class="text-white mb-2" href="#">Media Center</a>
                         <a class="text-white mb-2" href="#">Redeem Gift Cards</a>
@@ -241,6 +268,7 @@
                         <a class="text-white mb-2" href="#">Ad Choices</a>
                     </div>
                 </div>
+                <!-- Language selector -->
                 <select class="selector mt-3" name="language" id="language-selector">
                     <option value="english">English</option>
                     <option value="spanish">Spanish</option>
@@ -265,6 +293,7 @@
                 </h1> -->
             </div>
         </footer>
+        <!-- End of footer -->
     </div>
     <!-- Javascript files -->
     <script src="static/js/script.js"></script>
