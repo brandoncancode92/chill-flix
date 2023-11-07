@@ -7,7 +7,7 @@
 /* Page background */
 .background {
     background-image: url('/chill-flix/static/img/sign-in-background.png');
-    background-size: 230vh;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
